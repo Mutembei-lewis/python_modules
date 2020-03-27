@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT']= 465
-app.config['MAIL_USERNAME'] = 'lewismutembei001@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Lewis668@'
+app.config['MAIL_USERNAME'] = 'example@gmail.com'
+app.config['MAIL_PASSWORD'] = 'itsmysecretyoudumbass'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 app.config['DEBUG'] =True
@@ -28,8 +28,8 @@ mail = Mail(app)
 def index():
     msg = Message(
         'Did I just send you an email',
-        sender= 'lewismutembei001@gmail.com',
-        recipients = ['teshlewie668@gmail.com']
+        sender= 'yourself@gmail.com',
+        recipients = ['herself@gmail.com']
     )
     mail.send(msg)
     return "Hurray I just sent someone an email"
